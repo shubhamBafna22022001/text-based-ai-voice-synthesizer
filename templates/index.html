@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Text-Based AI Voice Synthesizer</h1>
+    <form method="POST">
+        <label for="lyrics">Enter Lyrics:</label><br>
+        <textarea id="lyrics" name="lyrics" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Generate Audio">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

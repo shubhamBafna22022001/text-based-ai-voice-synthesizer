@@ -1,0 +1,91 @@
+2025-03-15 20:28:41,638 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-15 20:28:41,638 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 20:28:41,638 INFO:  * Restarting with stat
+2025-03-15 20:28:41,745 WARNING:  * Debugger is active!
+2025-03-15 20:28:41,751 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 20:29:05,599 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-15 20:29:05,599 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 20:29:05,599 INFO:  * Restarting with stat
+2025-03-15 20:29:05,702 WARNING:  * Debugger is active!
+2025-03-15 20:29:05,705 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 20:37:59,622 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-15 20:37:59,622 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 20:37:59,623 INFO:  * Restarting with stat
+2025-03-15 20:37:59,726 WARNING:  * Debugger is active!
+2025-03-15 20:37:59,730 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 20:38:09,772 INFO: 127.0.0.1 - - [15/Mar/2025 20:38:09] "GET / HTTP/1.1" 200 -
+2025-03-15 20:38:10,268 INFO: 127.0.0.1 - - [15/Mar/2025 20:38:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-15 20:38:22,983 INFO: 127.0.0.1 - - [15/Mar/2025 20:38:22] "POST / HTTP/1.1" 200 -
+2025-03-15 20:38:23,024 INFO: 127.0.0.1 - - [15/Mar/2025 20:38:23] "[35m[1mGET /audio/output_20250315_203820.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 20:38:26,394 INFO: 127.0.0.1 - - [15/Mar/2025 20:38:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-15 21:13:30,326 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-15 21:13:30,326 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 21:13:30,327 INFO:  * Restarting with stat
+2025-03-15 21:13:30,426 WARNING:  * Debugger is active!
+2025-03-15 21:13:30,430 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 21:13:40,683 INFO: 127.0.0.1 - - [15/Mar/2025 21:13:40] "POST / HTTP/1.1" 200 -
+2025-03-15 21:13:40,705 INFO: 127.0.0.1 - - [15/Mar/2025 21:13:40] "[35m[1mGET /audio/output_20250315_211337.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 21:14:53,079 INFO: 127.0.0.1 - - [15/Mar/2025 21:14:53] "POST / HTTP/1.1" 200 -
+2025-03-15 21:14:53,103 INFO: 127.0.0.1 - - [15/Mar/2025 21:14:53] "[35m[1mGET /audio/output_20250315_211452.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 21:15:22,682 INFO: 127.0.0.1 - - [15/Mar/2025 21:15:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-15 21:16:00,777 INFO: 127.0.0.1 - - [15/Mar/2025 21:16:00] "POST / HTTP/1.1" 200 -
+2025-03-15 21:16:00,803 INFO: 127.0.0.1 - - [15/Mar/2025 21:16:00] "[35m[1mGET /audio/output_20250315_211600.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 21:16:03,623 INFO: 127.0.0.1 - - [15/Mar/2025 21:16:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-15 21:19:58,516 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/app.py', reloading
+2025-03-15 21:19:58,551 INFO:  * Restarting with stat
+2025-03-15 21:19:58,783 WARNING:  * Debugger is active!
+2025-03-15 21:19:58,798 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 21:21:29,936 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/tasks.py', reloading
+2025-03-15 21:21:29,978 INFO:  * Restarting with stat
+2025-03-15 21:21:30,194 WARNING:  * Debugger is active!
+2025-03-15 21:21:30,206 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 21:21:36,274 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/app.py', reloading
+2025-03-15 21:21:36,310 INFO:  * Restarting with stat
+2025-03-15 21:21:36,459 WARNING:  * Debugger is active!
+2025-03-15 21:21:36,470 INFO:  * Debugger PIN: 681-919-288
+2025-03-15 21:23:31,855 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-15 21:23:31,855 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 21:23:31,855 INFO:  * Restarting with stat
+2025-03-15 21:23:31,987 WARNING:  * Debugger is active!
+2025-03-15 21:23:31,996 INFO:  * Debugger PIN: 116-561-995
+2025-03-15 21:23:40,606 INFO: 127.0.0.1 - - [15/Mar/2025 21:23:40] "POST / HTTP/1.1" 200 -
+2025-03-15 21:23:47,594 INFO: Cache used for key: voices
+2025-03-15 21:23:47,600 INFO: 127.0.0.1 - - [15/Mar/2025 21:23:47] "POST / HTTP/1.1" 200 -
+2025-03-15 21:24:18,943 INFO: Cache used for key: voices
+2025-03-15 21:24:18,950 INFO: 127.0.0.1 - - [15/Mar/2025 21:24:18] "POST / HTTP/1.1" 200 -
+2025-03-15 21:26:17,257 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/tasks.py', reloading
+2025-03-15 21:26:17,290 INFO:  * Restarting with stat
+2025-03-15 21:26:17,498 WARNING:  * Debugger is active!
+2025-03-15 21:26:17,509 INFO:  * Debugger PIN: 116-561-995
+2025-03-15 21:26:18,523 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/tasks.py', reloading
+2025-03-15 21:26:18,595 INFO:  * Restarting with stat
+2025-03-15 21:26:18,751 WARNING:  * Debugger is active!
+2025-03-15 21:26:18,762 INFO:  * Debugger PIN: 116-561-995
+2025-03-15 21:26:24,840 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/app.py', reloading
+2025-03-15 21:26:24,890 INFO:  * Restarting with stat
+2025-03-15 21:26:25,042 WARNING:  * Debugger is active!
+2025-03-15 21:26:25,045 INFO:  * Debugger PIN: 116-561-995
+2025-03-15 21:27:04,864 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-03-15 21:27:04,864 INFO: [33mPress CTRL+C to quit[0m
+2025-03-15 21:27:04,865 INFO:  * Restarting with stat
+2025-03-15 21:27:05,008 WARNING:  * Debugger is active!
+2025-03-15 21:27:05,012 INFO:  * Debugger PIN: 116-561-995
+2025-03-15 21:27:08,405 INFO: Cache used for key: voices
+2025-03-15 21:27:08,440 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:08] "POST / HTTP/1.1" 200 -
+2025-03-15 21:27:08,465 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:08] "GET /task_status/30e5a69f-c2cf-4674-ab89-3e0ee3803057 HTTP/1.1" 200 -
+2025-03-15 21:27:09,660 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:09] "GET /task_status/30e5a69f-c2cf-4674-ab89-3e0ee3803057 HTTP/1.1" 200 -
+2025-03-15 21:27:10,677 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:10] "GET /task_status/30e5a69f-c2cf-4674-ab89-3e0ee3803057 HTTP/1.1" 200 -
+2025-03-15 21:27:10,684 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:10] "[35m[1mGET /audio/output_20250315_212709.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 21:27:16,988 INFO: Cache used for key: voices
+2025-03-15 21:27:16,996 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:16] "POST / HTTP/1.1" 200 -
+2025-03-15 21:27:17,026 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:17] "GET /task_status/9939a258-bf13-4b6f-82d1-4ffcb767ace6 HTTP/1.1" 200 -
+2025-03-15 21:27:18,210 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:18] "GET /task_status/9939a258-bf13-4b6f-82d1-4ffcb767ace6 HTTP/1.1" 200 -
+2025-03-15 21:27:19,228 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:19] "GET /task_status/9939a258-bf13-4b6f-82d1-4ffcb767ace6 HTTP/1.1" 200 -
+2025-03-15 21:27:19,244 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:19] "[35m[1mGET /audio/output_20250315_212718.mp3 HTTP/1.1[0m" 206 -
+2025-03-15 21:27:20,828 INFO: 127.0.0.1 - - [15/Mar/2025 21:27:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

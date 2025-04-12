@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced AI Voice Synthesizer</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Include Socket.IO client library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Advanced Text-Based AI Voice Synthesizer</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label for="lyrics">Enter your text:</label>
+            <textarea id="lyrics" name="lyrics" class="form-control" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Select Voice:</label>
+            <select name="voice" class="form-control">
+                {% for voice in voices %}
+                <option value="{{ voice.voice_id }}">{{ voice.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="emotionLevel">Select Emotion:</label>
+            <select id="emotionLevel" name="emotionLevel" class="form-control">
+                <option value="neutral" selected>Neutral</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="angry">Angry</option>
+            </select>
+        </div>
+        <!-- New parameters for fine-tuning tone -->
+        <div class="form-group">
+            <label for="pitch">Pitch (0.5 - 2.0):</label>
+            <input type="number" id="pitch" name="pitch" class="form-control" step="0.1" value="1.0" min="0.5" max="2.0">
+        </div>
+        <div class="form-group">
+            <label for="rate">Rate (0.5 - 2.0):</label>
+            <input type="number" id="rate" name="rate" class="form-control" step="0.1" value="1.0" min="0.5" max="2.0">
+        </div>
+        <button class="btn btn-primary">Generate Audio</button>
+    </form>
+    
+    {% if message %}
+        <div class="alert alert-info mt-3" id="status-message">{{ message }}</div>
+    {% endif %}
+    
+    <div id="audio-container" class="mt-3" style="display: none;">
+        <audio controls>
+            <source id="audio-source" type="audio/mpeg">
+        </audio>
+        <a id="download-link" download>Download MP3</a>
+    </div>
+
+    <!-- Socket.IO client integration -->
+    <script>
+        const socket = io();
+        socket.on('connect', () => {
+            console.log("Connected via Socket.IO");
+        });
+
+        // Listen for task queued event (can be extended for other task events)
+        socket.on('task_queued', (data) => {
+            console.log("Task queued with ID: " + data.task_id);
+        });
+
+        // If task_id is provided (via template), start polling for status updates:
+        {% if task_id %}
+        const taskId = "{{ task_id }}";
+        function checkTaskStatus() {
+            fetch('/task_status/' + taskId)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'SUCCESS') {
+                        document.getElementById('status-message').innerText = 'Audio generated successfully!';
+                        const audioContainer = document.getElementById('audio-container');
+                        const audioSource = document.getElementById('audio-source');
+                        const downloadLink = document.getElementById('download-link');
+                        const audioUrl = "{{ url_for('serve_audio', filename='') }}" + data.result;
+                        audioSource.src = audioUrl;
+                        downloadLink.href = audioUrl;
+                        downloadLink.innerText = 'Download ' + data.result;
+                        audioContainer.style.display = 'block';
+                        audioContainer.querySelector('audio').load();
+                    } else if (data.status === 'FAILURE') {
+                        document.getElementById('status-message').innerText = 'Audio generation failed!';
+                    } else {
+                        setTimeout(checkTaskStatus, 1000);
+                    }
+                });
+        }
+        checkTaskStatus();
+        {% endif %}
+    </script>
+</div>
+</body>
+</html>

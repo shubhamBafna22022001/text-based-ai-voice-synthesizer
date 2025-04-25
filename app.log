@@ -967,3 +967,37 @@
 2025-04-17 19:10:26,517 INFO: 127.0.0.1 - - [17/Apr/2025 19:10:26] "POST /socket.io/?EIO=4&transport=polling&t=PP3-hSJ&sid=JP-nIxgtMJxMT1zUAAAU HTTP/1.1" 200 -
 2025-04-17 19:10:26,518 INFO: 127.0.0.1 - - [17/Apr/2025 19:10:26] "GET /socket.io/?EIO=4&transport=polling&t=PP3-hSJ.0&sid=JP-nIxgtMJxMT1zUAAAU HTTP/1.1" 200 -
 2025-04-17 19:10:51,502 INFO: 127.0.0.1 - - [17/Apr/2025 19:10:51] "GET /socket.io/?EIO=4&transport=polling&t=PP3-hUV&sid=JP-nIxgtMJxMT1zUAAAU HTTP/1.1" 200 -
+2025-04-26 04:40:40,131 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-26 04:40:40,132 INFO: [33mPress CTRL+C to quit[0m
+2025-04-26 04:40:40,132 INFO:  * Restarting with stat
+2025-04-26 04:40:40,290 WARNING:  * Debugger is active!
+2025-04-26 04:40:40,296 INFO:  * Debugger PIN: 681-919-288
+2025-04-26 04:40:46,757 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:46] "GET / HTTP/1.1" 200 -
+2025-04-26 04:40:46,829 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:46] "GET /socket.io/?EIO=4&transport=polling&t=PPlDy0e HTTP/1.1" 200 -
+2025-04-26 04:40:46,857 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:46] "POST /socket.io/?EIO=4&transport=polling&t=PPlDy15&sid=q8TtuUMpg4rq1dyMAAAA HTTP/1.1" 200 -
+2025-04-26 04:40:46,858 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:46] "GET /socket.io/?EIO=4&transport=polling&t=PPlDy16&sid=q8TtuUMpg4rq1dyMAAAA HTTP/1.1" 200 -
+2025-04-26 04:40:50,895 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-26 04:40:50,896 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:50] "GET /socket.io/?EIO=4&transport=polling&t=PPlDy3E&sid=q8TtuUMpg4rq1dyMAAAA HTTP/1.1" 200 -
+2025-04-26 04:40:55,391 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "GET /socket.io/?EIO=4&transport=websocket&sid=q8TtuUMpg4rq1dyMAAAA HTTP/1.1" 200 -
+2025-04-26 04:40:55,401 INFO: Cache used for key: voices
+2025-04-26 04:40:55,402 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "GET / HTTP/1.1" 200 -
+2025-04-26 04:40:55,416 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "GET /socket.io/?EIO=4&transport=polling&t=PPlD-6s HTTP/1.1" 200 -
+2025-04-26 04:40:55,451 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "POST /socket.io/?EIO=4&transport=polling&t=PPlD-7P&sid=WgiQPOt-PLV-gZoQAAAC HTTP/1.1" 200 -
+2025-04-26 04:40:55,453 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "GET /socket.io/?EIO=4&transport=polling&t=PPlD-7P.0&sid=WgiQPOt-PLV-gZoQAAAC HTTP/1.1" 200 -
+2025-04-26 04:40:55,461 INFO: 127.0.0.1 - - [26/Apr/2025 04:40:55] "GET /socket.io/?EIO=4&transport=polling&t=PPlD-7Z&sid=WgiQPOt-PLV-gZoQAAAC HTTP/1.1" 200 -
+2025-04-26 04:40:59,544 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/app.py', reloading
+2025-04-26 04:40:59,588 INFO:  * Restarting with stat
+2025-04-26 04:40:59,838 WARNING:  * Debugger is active!
+2025-04-26 04:40:59,842 INFO:  * Debugger PIN: 681-919-288
+2025-04-26 04:41:00,566 INFO: 127.0.0.1 - - [26/Apr/2025 04:41:00] "GET /socket.io/?EIO=4&transport=polling&t=PPlD_NE HTTP/1.1" 200 -
+2025-04-26 04:41:00,575 INFO: 127.0.0.1 - - [26/Apr/2025 04:41:00] "POST /socket.io/?EIO=4&transport=polling&t=PPlD_NO&sid=2KMAoLMgECpbBxnmAAAA HTTP/1.1" 200 -
+2025-04-26 04:41:00,576 INFO: 127.0.0.1 - - [26/Apr/2025 04:41:00] "GET /socket.io/?EIO=4&transport=polling&t=PPlD_NP&sid=2KMAoLMgECpbBxnmAAAA HTTP/1.1" 200 -
+2025-04-26 04:41:00,580 INFO: 127.0.0.1 - - [26/Apr/2025 04:41:00] "GET /socket.io/?EIO=4&transport=polling&t=PPlD_NY&sid=2KMAoLMgECpbBxnmAAAA HTTP/1.1" 200 -
+2025-04-26 04:43:38,555 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=websocket&sid=2KMAoLMgECpbBxnmAAAA HTTP/1.1" 200 -
+2025-04-26 04:43:38,565 INFO: Cache used for key: voices
+2025-04-26 04:43:38,573 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET / HTTP/1.1" 200 -
+2025-04-26 04:43:38,589 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=polling&t=PPlEbyS HTTP/1.1" 200 -
+2025-04-26 04:43:38,594 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "POST /socket.io/?EIO=4&transport=polling&t=PPlEbyW&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -
+2025-04-26 04:43:38,596 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=polling&t=PPlEbyW.0&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -
+2025-04-26 04:43:38,626 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=polling&t=PPlEbz0&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -

@@ -1,4 +1,4 @@
-#!/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/venv/bin/python3.11
+#!/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys

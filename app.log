@@ -1001,3 +1001,18 @@
 2025-04-26 04:43:38,594 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "POST /socket.io/?EIO=4&transport=polling&t=PPlEbyW&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -
 2025-04-26 04:43:38,596 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=polling&t=PPlEbyW.0&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -
 2025-04-26 04:43:38,626 INFO: 127.0.0.1 - - [26/Apr/2025 04:43:38] "GET /socket.io/?EIO=4&transport=polling&t=PPlEbz0&sid=sB38WNo5JUb0saVoAAAC HTTP/1.1" 200 -
+2025-05-10 00:52:37,477 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-05-10 00:52:37,477 INFO: [33mPress CTRL+C to quit[0m
+2025-05-10 00:52:37,477 INFO:  * Restarting with stat
+2025-05-10 00:52:37,640 WARNING:  * Debugger is active!
+2025-05-10 00:52:37,645 INFO:  * Debugger PIN: 681-919-288
+2025-05-10 00:52:47,941 INFO: 127.0.0.1 - - [10/May/2025 00:52:47] "GET / HTTP/1.1" 200 -
+2025-05-10 00:52:48,000 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "GET /socket.io/?EIO=4&transport=polling&t=PQsW0y- HTTP/1.1" 200 -
+2025-05-10 00:52:48,028 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "POST /socket.io/?EIO=4&transport=polling&t=PQsW0zQ&sid=f81iZACCZtYHgcNpAAAA HTTP/1.1" 200 -
+2025-05-10 00:52:48,030 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "GET /socket.io/?EIO=4&transport=polling&t=PQsW0zR&sid=f81iZACCZtYHgcNpAAAA HTTP/1.1" 200 -
+2025-05-10 00:52:48,163 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "GET /socket.io/?EIO=4&transport=polling&t=PQsW0_Y&sid=f81iZACCZtYHgcNpAAAA HTTP/1.1" 200 -
+2025-05-10 00:52:48,172 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "GET /socket.io/?EIO=4&transport=polling&t=PQsW0_f&sid=f81iZACCZtYHgcNpAAAA HTTP/1.1" 200 -
+2025-05-10 00:52:48,238 INFO: 127.0.0.1 - - [10/May/2025 00:52:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 01:07:43,582 INFO:  * Detected change in '/Users/shubhamdineshbafna/Desktop/text-based-ai-voice-synthesizer/app.py', reloading
+2025-05-10 01:07:43,631 INFO:  * Restarting with stat

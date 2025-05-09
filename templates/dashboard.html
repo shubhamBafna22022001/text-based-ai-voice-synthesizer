@@ -1,0 +1,73 @@
+{% extends "base.html.j2" %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4>Navigation</h4>
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="{{ url_for('dashboard') }}" class="list-group-item list-group-item-action active">Dashboard</a>
+          <a href="{{ url_for('home') }}" class="list-group-item list-group-item-action">New Synthesis</a>
+          <a href="{{ url_for('batch_processing') }}" class="list-group-item list-group-item-action">Batch Processing</a>
+          <a href="{{ url_for('manage_presets') }}" class="list-group-item list-group-item-action">Voice Presets</a>
+          <a href="{{ url_for('analytics') }}" class="list-group-item list-group-item-action">Analytics</a>
+          <a href="{{ url_for('logout') }}" class="list-group-item list-group-item-action text-danger">Logout</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-9">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h3>Recent Synthesis Tasks</h3>
+        </div>
+        <div class="card-body">
+          {% if tasks %}
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Text</th>
+                    <th>Format</th>
+                    <th>Duration</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for task in tasks %}
+                  <tr>
+                    <td>{{ task.timestamp[:10] }}</td>
+                    <td>{{ task.text[:50] }}{% if task.text|length > 50 %}...{% endif %}</td>
+                    <td>{{ task.format }}</td>
+                    <td>{{ task.duration_seconds|round(2) }}s</td>
+                    <td>
+                      <div class="btn-group btn-group-sm">
+                        <a href="/audio/{{ task.output_file }}" class="btn btn-success" download>
+                          <i class="fas fa-download"></i>
+                        </a>
+                        <a href="/metrics/{{ task.task_id }}" class="btn btn-info">
+                          <i class="fas fa-chart-line"></i>
+                        </a>
+                        <a href="/process_audio/{{ task.task_id }}" class="btn btn-warning">
+                          <i class="fas fa-sliders-h"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% else %}
+            <div class="alert alert-info">No synthesis tasks found.</div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
